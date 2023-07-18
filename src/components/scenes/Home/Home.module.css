@@ -1,0 +1,247 @@
+.home {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.homeVideoText {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.title {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.text {
+    color: #fff;
+    font-weight: 700;
+    transition: 0.5s;
+}
+
+.text h1 {
+    font-size: 7rem;
+}
+
+.text:hover {
+    -webkit-text-stroke: 2px #fff;
+    color: transparent;
+    transition: 0.5s;
+}
+
+
+.text {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.video {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+}
+
+.homeVideoText a {
+    text-decoration: none;
+    display: inline-block;
+    color: #fff;
+    font-size: 20px;
+    border: 2px solid #fff;
+    padding: 14px 70px;
+    border-radius: 50px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.homeVideoText a:hover {
+    background-color: #fff;
+    color: black;
+    transition: 0.5s;
+}
+
+@supports (object-fit: cover) {
+    .video {
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+
+.about {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6rem;
+    margin: 0 auto;
+}
+
+.aboutLeft {
+    width: 30rem;
+}
+
+.globe {
+    width: 100%;
+}
+
+.aboutRight {
+    display: flex;
+    flex-direction: column;
+    width: 28rem;
+    margin-bottom: 3rem;
+}
+
+.aboutRight h2, .technology h2 {
+    font-size: 3.2rem;
+    font-weight: 700;
+}
+
+.aboutRight h2 {
+    margin-bottom: 10px;
+}
+
+.aboutRight p, .techItem p {
+    line-height: 28px;
+    font-size: 1.15rem;
+    font-weight: 500;
+    color: #899392;
+}
+
+.aboutLinks {
+    margin-top: 1rem;
+}
+
+.technology {
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.technologies {
+    width: 55rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.line {
+    width: 100%;
+    border-top: 2px solid #f0f0f0;
+}
+
+.lineVertical {
+    height: 27rem;
+    display: block;
+    border-left: 2px solid #f0f0f0;
+}
+
+.techBlock {
+    height: 100%;
+    width: 100%;
+    display: flex;
+}
+
+.techItem {
+    width: 48%;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.techItem h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.icon {
+    font-size: 4rem;
+    padding: 1rem;
+    border: 2px solid black;
+    border-radius: 50%;
+}
+
+.linkTech {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: 1rem;
+    color: #1487b6;
+    cursor: pointer;
+    transition-duration: 0.3s;
+    align-self: flex-start;
+    margin-top: auto;
+}
+
+.linkTech:hover {
+    transition-duration: 0.3s;
+    color: #dbe2e8;
+}
+
+@media only screen and (max-width: 1300px) {
+    .text h1 {
+        font-size: 5rem;
+    }
+}
+
+
+@media only screen and (max-width: 1040px) {
+    .text h1 {
+        font-size: 1.8rem;
+    }
+    .text {
+        gap: 0.5rem;
+    }
+    .about {
+        height: 100%;
+        margin: 7rem 0 0 0;
+        flex-direction: column;
+    }
+    .aboutLeft {
+        width: 100%;
+    }
+    .aboutRight {
+        width: 90%;
+    }
+
+    .aboutRight h2, .technology h2 {
+        font-size: 2rem;
+    }
+
+    .aboutRight p {
+        font-size: 1rem;
+    }
+    .technology {
+        width: 90%;
+    }
+    .technologies {
+        width: 90%;
+    }
+    .techBlock {
+        flex-direction: column;
+    }
+    .techItem {
+        width: 100%;
+    }
+    .techItem p {
+        align-self: flex-start;
+    }
+    .lineVertical {
+        display: none;
+    }
+}

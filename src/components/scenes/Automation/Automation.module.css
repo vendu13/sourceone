@@ -1,0 +1,86 @@
+.automation {
+    width: 100%;
+    height: 100%;
+}
+
+.aboutImageText {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.image {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    transition: 0.7s all ease-in-out;
+    top: 0;
+    left: 0;
+    z-index: -10;
+}
+
+.aboutImageText:hover .image {
+    transform: scale(1.3); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    transition-duration: 1s;
+}
+
+.text h1 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 43%;
+    margin: auto;
+    width: fit-content; /* Need a specific value to work */
+    font-size: 80px;
+    color: #fff;
+    font-weight: 700;
+    transition: 0.5s;
+}
+
+.text h1:hover {
+    -webkit-text-stroke: 2px #fff;
+    color: transparent;
+    transition: 0.5s;
+}
+
+.process {
+    max-width: 100%;
+    padding: 4rem 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.line {
+    width: auto;
+    border-top: 2px solid #605f5f;
+    margin: 3rem 6rem 0;
+}
+
+
+@media only screen and (max-width: 1040px) {
+    .aboutImageText {
+        height: 80vh;
+    }
+
+    .aboutImageText img {
+        object-fit: cover;
+    }
+
+    .text h1 {
+        top: 35%;
+        text-align: center;
+        padding: 0 1rem;
+        font-size: 1.8rem;
+    }
+    .overviewPart, .process, .hire {
+        flex-direction: column;
+        width: auto;
+        padding: 3rem 5%;
+    }
+}
