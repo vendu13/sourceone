@@ -72,7 +72,7 @@ const Header = ({isTopOfPage, show}) => {
                     <div className={style.headerContainer}
                          style={styleHeader ? {backgroundColor: "black"} : {}}
                     >
-                        <img src={logo} alt='logo' className={style.logo}/>
+                        <Link to='/'><img src={logo} alt='logo' className={style.logo}/></Link>
                         <ul className={style.menu}>
                             <li
                                 onMouseOver={() => {
@@ -277,7 +277,8 @@ const Header = ({isTopOfPage, show}) => {
                     <div className={style.headerContainer2}
                          style={styleHeader ? {backgroundColor: "black"} : {}}
                     >
-                        {show && !isAboveMobileScreens && <img src={logo} alt='logo' className={style.logo}/>}
+                        {show && !isAboveMobileScreens &&
+                            <Link to='/'><img src={logo} alt='logo' className={style.logo}/></Link>}
                         <div></div>
                         <button
                             className={style.menuButton}
@@ -295,7 +296,7 @@ const Header = ({isTopOfPage, show}) => {
                     <div className={style.mobileNavbar}>
                         {/* CLOSE ICON */}
                         <div className={style.headerContainer2}>
-                            <img src={logo} alt='logo' className={style.logo}/>
+                            <Link to='/'><img src={logo} alt='logo' className={style.logo}/></Link>
                             <button className={style.mobileCloseButton}
                                     onClick={() => setIsMenuToggled(!isMenuToggled)}>
                                 <XMarkIcon className={style.mobileCloseIcon}/>

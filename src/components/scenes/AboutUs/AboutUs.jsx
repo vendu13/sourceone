@@ -18,7 +18,8 @@ const AboutUs = () => {
 
      useEffect(() => {
          window.scrollTo(0, 0)
-         axios.get(`${baseURL}images`).then((response) => {
+         axios.get(`${baseURL}people`).then((response) => {
+             console.log(response.data)
              setPeopleData(response.data);
          });
      }, [])
