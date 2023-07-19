@@ -1,6 +1,7 @@
 .about {
     width: 100%;
     height: 100%;
+    overflow: hidden;
 }
 
 .aboutImageText {
@@ -160,6 +161,7 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
+    align-items: flex-start;
     gap: 2rem;
 }
 
@@ -185,6 +187,9 @@
     margin-top: 1rem;
 }
 
+.imageData {
+    max-width: 12rem;
+}
 
 @media only screen and (max-width: 1300px) {
     .text h1 {

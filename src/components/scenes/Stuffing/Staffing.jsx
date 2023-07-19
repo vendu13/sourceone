@@ -1,8 +1,8 @@
 import React, {useEffect, useState} from "react";
 import s from './Stuffing.module.css'
 import stuffing from "../../../assets/staffing.webp";
-import stuffing1 from "../../../assets/staffing1.png";
-import stuffing2 from "../../../assets/staffing2.png";
+import stuffing1 from "../../../assets/staffing1.webp";
+import stuffing2 from "../../../assets/staffing2.webp";
 import {motion} from "framer-motion";
 
 const Staffing = () => {

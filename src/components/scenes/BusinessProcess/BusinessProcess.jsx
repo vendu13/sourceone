@@ -2,9 +2,9 @@ import s from './BusinessProcess.module.css'
 import {motion} from "framer-motion";
 import businessProcess from "../../../assets/businessProcess.webp";
 import businessProcess2 from "../../../assets/businessProcess2.webp";
-import insurance from "../../../assets/insurance.jpg";
-import banking from "../../../assets/banking.jpg";
-import payroal from "../../../assets/payroal.jpg";
+import insurance from "../../../assets/insurance.webp";
+import banking from "../../../assets/banking.webp";
+import payroal from "../../../assets/payroal.webp";
 import List from "../../List/List.jsx";
 import {useEffect} from "react";
 

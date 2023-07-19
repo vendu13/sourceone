@@ -1,8 +1,8 @@
 import s from './FulltimeRecruitment.module.css'
 import recruitment from "../../../assets/recruitment.webp";
-import recruitment1 from "../../../assets/recruitment.jpg";
-import recruitment2 from "../../../assets/recruitment2.jpg";
-import recruitment3 from "../../../assets/recruitment3.jpg";
+import recruitment1 from "../../../assets/recruitment (1).webp";
+import recruitment2 from "../../../assets/recruitment2.webp";
+import recruitment3 from "../../../assets/recruitment3.webp";
 import List from "../../List/List.jsx";
 import {motion} from "framer-motion";
 import {useEffect} from "react";

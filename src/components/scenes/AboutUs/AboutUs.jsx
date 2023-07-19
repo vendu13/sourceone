@@ -1,24 +1,29 @@
 import style from './AboutUs.module.css'
 import {motion} from "framer-motion";
-import about from '../../../assets/about.jpg'
-import people from '../../../assets/people.jpg'
-import vision from '../../../assets/about-vision.jpg'
-import mission from '../../../assets/about-mission.jpg'
+import axios from "axios";
+import about from '../../../assets/about.webp'
+import people from '../../../assets/people.webp'
+import vision from '../../../assets/about-vision.webp'
+import mission from '../../../assets/about-mission.webp'
 import carousel from '../../../assets/carousel.webp'
-import team from '../../../assets/team1.jpg'
 import Carousel from "../../Carousel/Carousel.jsx";
-import {useEffect} from "react";
+import {useEffect, useState} from "react";
+import {base64ArrayBuffer} from "../../../decode.js";
+
+const baseURL = import.meta.env.VITE_API_URL;
 
 const AboutUs = () => {
 
+    const [peopleData,setPeopleData] = useState([])
+
      useEffect(() => {
          window.scrollTo(0, 0)
+         axios.get(`${baseURL}images`).then((response) => {
+             setPeopleData(response.data);
+         });
      }, [])
 
-    const peopleArray = ['Brandon Show', 'Floyd Stephens', 'Kate Clark', 'Eunice Doyle', 'Virgina Aguilar', 'Jeffrey Goodin', 'Beatrice Williamson', 'Roger Dawson']
-    const peopleJobArray = ['Founder & CEO', 'Chief Technology Officer', 'Director of people', 'Software Engineer', 'Software Engineer', 'Sr Manager, Content and Growth', 'Product Designer', 'Senior Account Executive']
-
-    const headers = ['Customer Delight', 'Leadership', 'Integrity', 'Passion']
+   const headers = ['Customer Delight', 'Leadership', 'Integrity', 'Passion']
     const paragraphs = ['A commitment to exceed expectations.', 'Setting standards in business processes.',
         'Being transparent and professional in all our transactions.', 'A Passion for Excellence']
 
@@ -58,7 +63,7 @@ const AboutUs = () => {
                 <motion.div
                     initial='hidden'
                     whileInView='visible'
-                    viewport={{amount: 0.5, once: true}}
+                    viewport={{amount: 0.2, once: true}}
                     transition={{duration: 0.5}}
                     variants={{
                         hidden: {opacity: 0, x: -100},
@@ -106,11 +111,11 @@ const AboutUs = () => {
                 <h1 className={style.overviewPart2H}>Meet our <br></br> amazing team</h1>
                 <div style={{width: '100%', margin: '2rem 0'}} className={style.line}/>
                 <div className={style.team}>
-                    {peopleArray.map((el, index) => (
-                        <div key={index} className={style.teamOne}>
-                            <img src={team} alt='team'/>
-                            <h2>{el}</h2>
-                            <p>{peopleJobArray[index]}</p>
+                    {peopleData?.map(el => (
+                        <div key={el?._id} className={style.teamOne}>
+                            <img className={style.imageData} src={"data:image/jpeg;base64," + base64ArrayBuffer(el?.img?.data?.data)} alt={el?.name} />
+                            <h4>{el?.name}</h4>
+                            <p>{el?.position}</p>
                         </div>
                     ))}
                 </div>

@@ -1,9 +1,12 @@
 import {useEffect} from 'react'
 import s from "./Contact.module.css";
+import axios from "axios";
 import contactus from "../../../assets/contactus.webp";
 import {motion} from "framer-motion";
 import {GrMail, GrMapLocation, GrPhone} from 'react-icons/gr'
 import {useForm} from "react-hook-form";
+
+const baseURL = import.meta.env.VITE_API_URL;
 
 const Contact = () => {
 
@@ -11,6 +14,7 @@ const Contact = () => {
         register,
         handleSubmit,
         formState: {isValid},
+        setValue
     } = useForm({
         defaultValues: {
             firstName: '',
@@ -24,6 +28,15 @@ const Contact = () => {
 
 
     const submitForm = async (values) => {
+        axios
+            .post(`${baseURL}contact`, values)
+            .then(() => {
+                setValue('firstName', '')
+                setValue('lastName', '')
+                setValue('email', '')
+                setValue('phone', '')
+                setValue('message', '')
+            });
         //const data = await dispatch(fetchAuthLogin(values));
         console.log(values)
     }

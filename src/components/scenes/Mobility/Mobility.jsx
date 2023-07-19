@@ -1,6 +1,6 @@
 import s from './Mobility.module.css'
-import mobility from "../../../assets/mobility.jpg";
-import mobility1 from "../../../assets/mobility2.jpg";
+import mobility from "../../../assets/mobility.webp";
+import mobility1 from "../../../assets/mobility2.webp";
 import {motion} from "framer-motion";
 import {useEffect} from "react";
 
@@ -23,7 +23,7 @@ const Mobility = () => {
                 <motion.div
                     initial='hidden'
                     whileInView='visible'
-                    viewport={{amount: 0.5, once: true}}
+                    viewport={{amount: 0.2, once: true}}
                     transition={{duration: 0.5}}
                     variants={{
                         hidden: {opacity: 0, x: -100},
@@ -42,7 +42,7 @@ const Mobility = () => {
                 <motion.img
                     initial='hidden'
                     whileInView='visible'
-                    viewport={{amount: 0.5, once: true}}
+                    viewport={{amount: 0.2, once: true}}
                     transition={{duration: 0.5}}
                     variants={{
                         hidden: {opacity: 0, x: 100},
@@ -60,10 +60,10 @@ const Mobility = () => {
             <motion.div
                 initial='hidden'
                 whileInView='visible'
-                viewport={{amount: 0.3, once: true}}
+                viewport={{amount: 0.2, once: true}}
                 transition={{duration: 0.5}}
                 variants={{
-                    hidden: {opacity: 0, x: -200},
+                    hidden: {opacity: 0, x: -100},
                     visible: {opacity: 1, x: 0}
                 }}
                 className={s.overviewPart}>
@@ -83,10 +83,10 @@ const Mobility = () => {
             <motion.div
                 initial='hidden'
                 whileInView='visible'
-                viewport={{amount: 0.3, once: true}}
+                viewport={{amount: 0.2, once: true}}
                 transition={{duration: 0.5}}
                 variants={{
-                    hidden: {opacity: 0, x: 200},
+                    hidden: {opacity: 0, x: 100},
                     visible: {opacity: 1, x: 0}
                 }}
                 className={s.overviewPart}>

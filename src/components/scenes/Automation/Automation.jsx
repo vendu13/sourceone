@@ -1,5 +1,5 @@
 import s from './Automation.module.css'
-import automation from "../../../assets/automation.jpg";
+import automation from "../../../assets/automation.webp";
 import List from "../../List/List.jsx";
 import {motion} from "framer-motion";
 import {useEffect} from "react";

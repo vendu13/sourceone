@@ -1,5 +1,5 @@
 import s from './Workforce.module.css'
-import workforce from "../../../assets/workforce.jpg";
+import workforce from "../../../assets/workforce.webp";
 import List from "../../List/List.jsx";
 import {motion} from "framer-motion";
 import {useEffect} from "react";
@@ -33,10 +33,10 @@ const Workforce = () => {
             <motion.div
                 initial='hidden'
                 whileInView='visible'
-                viewport={{amount: 0.3, once: true}}
+                viewport={{amount: 0.2, once: true}}
                 transition={{duration: 0.5}}
                 variants={{
-                    hidden: {opacity: 0, x: -200},
+                    hidden: {opacity: 0, x: -100},
                     visible: {opacity: 1, x: 0}
                 }}
                 className={s.process}>

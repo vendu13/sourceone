@@ -1,9 +1,9 @@
 import s from './Career.module.css'
-import career from "../../../assets/career.jpg";
+import career from "../../../assets/career.webp";
 import List from "../../List/List.jsx";
 import {motion} from "framer-motion";
 import {useEffect} from "react";
-import career2 from "../../../assets/career2.jpg";
+import career2 from "../../../assets/career2.webp";
 
 const Career = () => {
 

@@ -1,11 +1,11 @@
 import s from './Outsourcing.module.css'
 import outsourcing from "../../../assets/outsourcing.webp";
 import outsourcing1 from "../../../assets/outsourcing2.webp";
-import outsourcing2 from "../../../assets/outsourcing2.png";
-import outsourcing3 from "../../../assets/ph.jpg";
-import outsourcing4 from "../../../assets/outsourcing4.jpg";
+import outsourcing2 from "../../../assets/outsourcing2 (1).webp";
+import outsourcing3 from "../../../assets/ph.webp";
+import outsourcing4 from "../../../assets/outsourcing4.webp";
 import outsourcing5 from "../../../assets/outsourcing5.webp";
-import outsourcing6 from "../../../assets/outsourcing6.jpg";
+import outsourcing6 from "../../../assets/outsourcing6.webp";
 import List from "../../List/List.jsx";
 import Carousel from "../../Carousel/Carousel.jsx";
 import {motion} from "framer-motion";
@@ -197,10 +197,10 @@ const Outsourcing = () => {
             <motion.div
                 initial='hidden'
                 whileInView='visible'
-                viewport={{amount: 0.3, once: true}}
+                viewport={{amount: 0.2, once: true}}
                 transition={{duration: 0.5}}
                 variants={{
-                    hidden: {opacity: 0, y: -200},
+                    hidden: {opacity: 0, y: -100},
                     visible: {opacity: 1, y: 0}
                 }}
                 className={s.process}>

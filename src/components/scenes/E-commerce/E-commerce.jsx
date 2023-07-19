@@ -1,6 +1,6 @@
 import s from './E-commerce.module.css'
-import ecommerce from "../../../assets/e-commerce3.jpg";
-import ecommerce2 from "../../../assets/e-commerce2.png";
+import ecommerce from "../../../assets/e-commerce3.webp";
+import ecommerce2 from "../../../assets/e-commerce2.webp";
 import {motion} from "framer-motion";
 import {useEffect} from "react";
 

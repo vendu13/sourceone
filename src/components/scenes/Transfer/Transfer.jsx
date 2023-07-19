@@ -1,5 +1,5 @@
 import s from './Transfer.module.css'
-import transfer from "../../../assets/transfer.jpg";
+import transfer from "../../../assets/transfer.webp";
 import List from "../../List/List.jsx";
 import {motion} from "framer-motion";
 import {useEffect} from "react";

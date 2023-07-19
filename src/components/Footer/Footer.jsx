@@ -1,7 +1,7 @@
 import React from 'react'
 import Button from "../Button/Button.jsx";
 import style from "./Footer.module.css";
-import logo from '../../assets/logo.png'
+import logo from '../../assets/logo.webp'
 import {BsFacebook, BsLinkedin} from 'react-icons/bs'
 import {Link} from "react-router-dom";
 

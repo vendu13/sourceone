@@ -1,4 +1,5 @@
 .footer {
+    overflow: hidden;
     margin-top: 10rem;
     padding: 1.5rem 6rem;
     display: flex;

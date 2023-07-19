@@ -1,5 +1,5 @@
 import s from './Deployment.module.css'
-import deployment from "../../../assets/deployment.jpg";
+import deployment from "../../../assets/deployment.webp";
 import List from "../../List/List.jsx";
 import {motion} from "framer-motion";
 import {useEffect} from "react";
@@ -34,10 +34,10 @@ const Deployment = () => {
             <motion.div
                 initial='hidden'
                 whileInView='visible'
-                viewport={{amount: 0.3, once: true}}
+                viewport={{amount: 0.2, once: true}}
                 transition={{duration: 0.5}}
                 variants={{
-                    hidden: {opacity: 0, x: -200},
+                    hidden: {opacity: 0, x: -100},
                     visible: {opacity: 1, x: 0}
                 }}
                 className={s.process}>

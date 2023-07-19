@@ -1,10 +1,10 @@
 import React, {useEffect, useState} from 'react'
 import {motion} from "framer-motion";
 import s from './BigData.module.css'
-import bigdata from "../../../assets/data.jpg";
+import bigdata from "../../../assets/data.webp";
 import style from "../AboutUs/AboutUs.module.css";
 import Carousel from "../../Carousel/Carousel.jsx";
-import carousel from "../../../assets/dataCarousel.jpg";
+import carousel from "../../../assets/dataCarousel.webp";
 
 const BigData = () => {
 

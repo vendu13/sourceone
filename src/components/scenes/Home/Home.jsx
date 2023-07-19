@@ -2,7 +2,7 @@ import {useEffect} from 'react'
 import {motion} from "framer-motion";
 import style from './Home.module.css'
 import homeVideo from '../../../assets/home.mp4'
-import globe from '../../../assets/globe2.jpg'
+import globe from '../../../assets/globe2.webp'
 import {BsPeopleFill, BsCloudFill, BsGearFill} from 'react-icons/bs'
 import {PiCrosshairFill} from 'react-icons/pi'
 import {HiDevicePhoneMobile} from 'react-icons/hi2'
@@ -12,8 +12,8 @@ import Button from "../../Button/Button.jsx";
 import AnchorLink from "react-anchor-link-smooth-scroll/lib/anchor-link.js";
 import {Link} from "react-router-dom";
 
-
 const Home = () => {
+
 
     useEffect(() => {
         window.scrollTo(0, 0)

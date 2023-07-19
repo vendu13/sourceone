@@ -1,6 +1,6 @@
 import style from './Header.module.css'
 import {AnimatePresence, motion} from "framer-motion";
-import logo from '../../assets/logo.png'
+import logo from '../../assets/logo.webp'
 import {Link} from "react-router-dom";
 import Arrow from "../Arrow/Arrow.jsx";
 import {useState} from "react";
