@@ -4,6 +4,7 @@ import List from "../../List/List.jsx";
 import {motion} from "framer-motion";
 import {useEffect} from "react";
 import career2 from "../../../assets/career2.webp";
+import Button from "../../Button/Button.jsx";
 
 const Career = () => {
 
@@ -15,9 +16,9 @@ const Career = () => {
     'Subsidized canteen/food facility', 'Recreational facilities', 'Matchless Incentive and Royalty program', 'House, Car and other benefits to all Source One key resources',
     'Fast Track Career growth on remuneration and level for all high performers', 'Career growth purely based on delivery and performance']
 
-    useEffect(() => {
+    /*useEffect(() => {
         window.scrollTo(0, 0)
-    }, [])
+    }, [])*/
 
     return (
         <div className={s.career}>
@@ -56,6 +57,7 @@ const Career = () => {
                     className={s.liferayImg} src={career2} alt='career2'/>
             </div>
 
+            <a className={s.explore} href='https://hiringnow.com/' target='_blank'><Button text='Explore your opportunities' BGcolor='black'/></a>
 
             <div className={s.line}/>
 

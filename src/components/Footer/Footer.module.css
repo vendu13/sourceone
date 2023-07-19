@@ -6,8 +6,7 @@
     flex-direction: column;
     color: white;
     gap: 1rem;
-    -webkit-animation: color-change-2x 30s linear infinite alternate both;
-    animation: color-change-2x 30s linear infinite alternate both;
+    background-color: #006db0;
 }
 
 .footerBlock {

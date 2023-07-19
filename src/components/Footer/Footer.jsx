@@ -10,7 +10,7 @@ const Footer = () => {
         <div className={style.footer}>
             <div className={style.footerBlock}>
                 <div>
-                    <img src={logo} alt='logo' className={style.image}/>
+                    <Link to='/' ><img src={logo} alt='logo' className={style.image}/></Link>
                 </div>
                 <Button text='CONTACT US'/>
             </div>
@@ -28,6 +28,10 @@ const Footer = () => {
                     <Link to='/technology/ecommerce' style={{color: "white", textDecoration: 'none'}}>E-Commerce</Link>
                     •
                     <a href='http://sourceone.education/' target='_blank' style={{color: "white", textDecoration: 'none'}} rel="noreferrer">SAP</a>
+                    •
+                    <Link to='/careers' style={{color: "white", textDecoration: 'none'}}>Career</Link>
+                    •
+                    <Link to='/privacy' style={{color: "white", textDecoration: 'none'}}>Privacy</Link>
                 </div>
             </div>
             <div className={style.line}/>
