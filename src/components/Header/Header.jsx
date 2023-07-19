@@ -261,7 +261,7 @@ const Header = ({isTopOfPage, show}) => {
                     }
 
                 </motion.nav>}
-            {show && !isAboveMobileScreens &&
+            {!isAboveMobileScreens &&
                 <motion.nav
                     initial='hidden'
                     whileInView='visible'
@@ -272,12 +272,13 @@ const Header = ({isTopOfPage, show}) => {
                     }}
                     exit={{opacity: 0, y: -80}}
                     className={style.header}
-                    style={navbarStyle}
+                    style={show ? {backgroundColor: 'black'} : {}}
                 >
                     <div className={style.headerContainer2}
                          style={styleHeader ? {backgroundColor: "black"} : {}}
                     >
-                        <img src={logo} alt='logo' className={style.logo}/>
+                        {show && !isAboveMobileScreens && <img src={logo} alt='logo' className={style.logo}/>}
+                        <div></div>
                         <button
                             className={style.menuButton}
                             onClick={() => setIsMenuToggled(!isMenuToggled)}
